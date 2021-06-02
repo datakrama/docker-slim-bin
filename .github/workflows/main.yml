@@ -49,10 +49,8 @@ jobs:
           git config --local user.email ${{ secrets.GIT_EMAIL }}
           git checkout aur
           git checkout main PKGBUILD .SRCINFO
-          if [[ -n "$(git diff --quiet)" ]]; then
-            git add PKGBUILD .SRCINFO
-            git commit -m "$COMMIT_MESSAGE"
-          fi
+          git add PKGBUILD .SRCINFO
+          git commit -m "$COMMIT_MESSAGE"
 
       - name: Push changes to GitHub
         uses: ad-m/github-push-action@master
