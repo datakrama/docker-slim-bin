@@ -19,4 +19,3 @@ pkgbase = docker-slim-bin
 	sha512sums_aarch64 = 3d17602224c7558cf641b7496120854a1204c8a0ca0f203b9fa0b50378949bcb915720a4a51f59b79f8481e5c919d3b02698d2a6df9d2dec24289b730bca943a
 
 pkgname = docker-slim-bin
-
