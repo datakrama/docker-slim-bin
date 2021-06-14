@@ -40,9 +40,9 @@ jobs:
       - name: Commit changes
         run: |
           if [[ -z "${{ github.event.inputs.version }}" ]]; then
-            COMMIT_MESSAGE="Update AUR package"
+            COMMIT_MESSAGE="chore: update AUR package"
           elif [[ -n "${{ github.event.inputs.version }}" ]]; then
-            COMMIT_MESSAGE="feat: bump to ${{ github.event.inputs.version }}"
+            COMMIT_MESSAGE="chore: bump to ${{ github.event.inputs.version }}"
           fi
 
           git config --local user.name "${{ secrets.GIT_USERNAME }}"
