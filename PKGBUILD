@@ -1,7 +1,7 @@
 # Maintainer: A. Husen <hi@husen.id>
 pkgname=docker-slim-bin
 _pkgname=docker-slim
-pkgver=1.35.2
+pkgver=1.36.0
 pkgrel=1
 pkgdesc="Don't change anything in your Docker container image and minify it by up to 30x (and for compiled languages even more) making it secure too! (free and open source)"
 arch=('x86_64' 'aarch64')
@@ -11,8 +11,8 @@ provides=('docker-slim' 'docker-slim-sensor')
 conflicts=('docker-slim')
 source_x86_64=("$_pkgname-$pkgver.tar.gz::https://downloads.dockerslim.com/releases/${pkgver}/dist_linux.tar.gz")
 source_aarch64=("$_pkgname-$pkgver.tar.gz::https://downloads.dockerslim.com/releases/${pkgver}/dist_linux_arm64.tar.gz")
-sha512sums_x86_64=('ff46c7de9730addc6f33da5603fe12568dfbbb8d4d0a6623271fc0d3227f344f45450e7b28a9293929c66f5dc303a8d9eb056780afdcaa0afe81753c71c2b11c')
-sha512sums_aarch64=('ff46c7de9730addc6f33da5603fe12568dfbbb8d4d0a6623271fc0d3227f344f45450e7b28a9293929c66f5dc303a8d9eb056780afdcaa0afe81753c71c2b11c')
+sha512sums_x86_64=('c5b3484c0a0670009450d1d7e74359fb2b22b4242282659243dfb13d463137586ace9294865a8fe0b9465e5cfa81dcd09c40b4b35bfdafff5fe1ca25838c23ad')
+sha512sums_aarch64=('c5b3484c0a0670009450d1d7e74359fb2b22b4242282659243dfb13d463137586ace9294865a8fe0b9465e5cfa81dcd09c40b4b35bfdafff5fe1ca25838c23ad')
 
 package() {
 	cd "${srcdir}"
